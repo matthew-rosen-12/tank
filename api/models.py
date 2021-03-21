@@ -42,6 +42,6 @@ class Fish(models.Model):
     def save(self, *args, **kwargs):
         validBreeds = ['sun']
         if self.breed in validBreeds:
-            super(Foo, self).save(*args, **kwargs)
+            super(Fish, self).save(*args, **kwargs)
         else:
             raise Exception("Invalid Breed")
